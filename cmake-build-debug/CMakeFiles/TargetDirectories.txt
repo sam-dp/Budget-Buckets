@@ -1,0 +1,3 @@
+C:/Users/cloud/Documents/-0- CODING PROJECTS/Budget-Buckets/cmake-build-debug/CMakeFiles/Budget_Buckets.dir
+C:/Users/cloud/Documents/-0- CODING PROJECTS/Budget-Buckets/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/cloud/Documents/-0- CODING PROJECTS/Budget-Buckets/cmake-build-debug/CMakeFiles/rebuild_cache.dir
