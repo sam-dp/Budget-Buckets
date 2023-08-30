@@ -55,6 +55,18 @@ build CMakeFiles/Budget_Buckets.dir/src/main.cpp.obj: CXX_COMPILER__Budget_Bucke
   OBJECT_DIR = CMakeFiles\Budget_Buckets.dir
   OBJECT_FILE_DIR = CMakeFiles\Budget_Buckets.dir\src
 
+build CMakeFiles/Budget_Buckets.dir/src/bucket.cpp.obj: CXX_COMPILER__Budget_Buckets_unscanned_Debug C$:/Users/cloud/Documents/-0-$ CODING$ PROJECTS/Budget-Buckets/src/bucket.cpp || cmake_object_order_depends_target_Budget_Buckets
+  DEP_FILE = CMakeFiles\Budget_Buckets.dir\src\bucket.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Budget_Buckets.dir
+  OBJECT_FILE_DIR = CMakeFiles\Budget_Buckets.dir\src
+
+build CMakeFiles/Budget_Buckets.dir/src/user.cpp.obj: CXX_COMPILER__Budget_Buckets_unscanned_Debug C$:/Users/cloud/Documents/-0-$ CODING$ PROJECTS/Budget-Buckets/src/user.cpp || cmake_object_order_depends_target_Budget_Buckets
+  DEP_FILE = CMakeFiles\Budget_Buckets.dir\src\user.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Budget_Buckets.dir
+  OBJECT_FILE_DIR = CMakeFiles\Budget_Buckets.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Budget_Buckets
@@ -63,7 +75,7 @@ build CMakeFiles/Budget_Buckets.dir/src/main.cpp.obj: CXX_COMPILER__Budget_Bucke
 #############################################
 # Link the executable Budget_Buckets.exe
 
-build Budget_Buckets.exe: CXX_EXECUTABLE_LINKER__Budget_Buckets_Debug CMakeFiles/Budget_Buckets.dir/src/main.cpp.obj
+build Budget_Buckets.exe: CXX_EXECUTABLE_LINKER__Budget_Buckets_Debug CMakeFiles/Budget_Buckets.dir/src/main.cpp.obj CMakeFiles/Budget_Buckets.dir/src/bucket.cpp.obj CMakeFiles/Budget_Buckets.dir/src/user.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Budget_Buckets.dir
