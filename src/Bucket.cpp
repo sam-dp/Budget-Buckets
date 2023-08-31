@@ -1,4 +1,31 @@
-int main() {
+#include "../include/Bucket.h"
+#include <string>
+#include <utility>
 
-    return 0;
+// Constructor
+Bucket::Bucket(std::string name, double size) {
+    this->name = std::move(name);
+    this->size = size;
+}
+
+// Name methods
+std::string Bucket::getName()  {
+    return name;
+}
+
+void Bucket::setName(std::string newName) {
+    name = std::move(newName);
+}
+
+// Size Methods
+double Bucket::getSize() const {
+    return size;
+}
+
+void Bucket::setSize(double newSize) {
+    size = newSize;
+}
+
+void Bucket::changeValue(double newValue) {
+    size += newValue;
 }
