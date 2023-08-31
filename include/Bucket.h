@@ -23,7 +23,7 @@ public:
     void setSize(double newSize);
 
     // Value methods
-    double getValue();
+    double getValue() const;
     void setValue(double newValue);
     void changeValue(double newValue);
 

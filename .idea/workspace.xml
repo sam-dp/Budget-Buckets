@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="Budget_Buckets" targetName="Budget_Buckets" />
@@ -19,7 +19,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f28400a7-534d-4c43-ae07-42d583008113" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9b36f74f45f168965209.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-08-30T07-49-41-0907.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Budget_Buckets-Debug-640f5d53e6bee6733b19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Bucket.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Bucket.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bucket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bucket.cpp" afterDir="false" />
     </list>
@@ -50,7 +53,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "build-bucket",
+    "git-widget-placeholder": "Build-User",
     "last_opened_file_path": "C:/Users/cloud/Documents/-0- CODING PROJECTS/Budget-Buckets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693378635593</updated>
-      <workItem from="1693378637968" duration="14647000" />
+      <workItem from="1693378637968" duration="15343000" />
     </task>
     <servers />
   </component>

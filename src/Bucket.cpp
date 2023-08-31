@@ -26,6 +26,15 @@ void Bucket::setSize(double newSize) {
     size = newSize;
 }
 
+// Value  Methods
+double Bucket::getValue() const {
+    return value;
+}
+
+void Bucket::setValue(double newValue) {
+    value = newValue;
+}
+
 void Bucket::changeValue(double newValue) {
     size += newValue;
 }
