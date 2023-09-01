@@ -14,17 +14,23 @@ private:
 
 public:
 
+    // Constructor
+    User(std::string& userName);
+
     // Name functions
     std::string getUsername();
-    void setUsername();
+    void setUsername(std::string& newUsername);
 
     // Bucket vector functions
-    void addBucket(std::string bucketName, double size);
-    void removeBucket(std::string name);
-    void changeBucketSize(std::string name, double sumNum);
+    void addBucket(const Bucket& bucket);
+    void removeBucket(const std::string& bucketName);
+    void changeBucketValue(const std::string& bucketName, double sumNum);
+    Bucket& getBucket(const std::string& bucketName);
+
+
 
     // monthlyIncome functions
-    double getMonthlyIncome();
+    double getMonthlyIncome() const;
     void setMonthlyIncome(double newIncome);
 
 

@@ -12,11 +12,11 @@ private:
 public:
 
     // Constructor
-    Bucket(std::string& bucketName, double bucketSize);
+    Bucket(const std::string& bucketName, double bucketSize);
 
     // Name functions
-    std::string getName();
-    void setName(std::string newName);
+    const std::string& getName() const;
+    void setName(const std::string& newName);
 
     // Size functions
     double getSize() const;
