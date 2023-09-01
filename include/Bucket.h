@@ -15,15 +15,15 @@ public:
     Bucket(const std::string& bucketName, double bucketSize);
 
     // Name functions
-    const std::string& getName() const;
+    [[nodiscard]] const std::string& getName() const;
     void setName(const std::string& newName);
 
     // Size functions
-    double getSize() const;
+    [[nodiscard]] double getSize() const;
     void setSize(double newSize);
 
     // Value functions
-    double getValue() const;
+    [[nodiscard]] double getValue() const;
     void setValue(double newValue);
     void changeValue(double newValue);
 

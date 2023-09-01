@@ -1,7 +1,11 @@
 #include <iostream>
+#include <string>
+#include <map>
+
+#include "../include/Bucket.h"
+#include "../include/User.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    User myUser("Sam", 1000.0);
 
 }

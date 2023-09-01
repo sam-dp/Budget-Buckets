@@ -4,7 +4,8 @@
 #include <string>
 
 // Constructor
-User::User(std::string& userName) : username(userName) {}
+User::User(const std::string& userName, double userMonthlyIncome)
+    : username(userName), monthlyIncome(userMonthlyIncome) {}
 
 // Name functions
 std::string User::getUsername() {
@@ -24,7 +25,7 @@ void User::removeBucket(const std::string& bucketName) {
     userBuckets.erase(bucketName);
 }
 
-Bucket& User::getBucket(const std::string& bucketName) {
+[[nodiscard]] Bucket& User::getBucket(const std::string& bucketName) {
     // Find the bucket in the map
     auto bucketIterator = userBuckets.find(bucketName);
 
@@ -46,7 +47,7 @@ void User::changeBucketValue(const std::string& bucketName, double sumNum) {
 }
 
 // Monthly income functions
-double User::getMonthlyIncome() const {
+[[nodiscard]] double User::getMonthlyIncome() const {
     return monthlyIncome;
 }
 

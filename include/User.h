@@ -15,7 +15,7 @@ private:
 public:
 
     // Constructor
-    User(std::string& userName);
+    User(const std::string& userName, double userMonthlyIncome);
 
     // Name functions
     std::string getUsername();

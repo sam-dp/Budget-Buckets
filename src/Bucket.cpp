@@ -15,7 +15,7 @@ void Bucket::setName(const std::string& newName) {
 }
 
 // Size Methods
-double Bucket::getSize() const {
+double Bucket::getSize() const{
     return size;
 }
 
@@ -24,7 +24,7 @@ void Bucket::setSize(double newSize) {
 }
 
 // Value  Methods
-double Bucket::getValue() const {
+double Bucket::getValue() const{
     return value;
 }
 
