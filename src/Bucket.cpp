@@ -3,10 +3,7 @@
 #include <utility>
 
 // Constructor
-Bucket::Bucket(std::string name, double size) {
-    this->name = std::move(name);
-    this->size = size;
-}
+Bucket::Bucket(std::string& bucketName, double bucketSize) : name(bucketName), size(bucketSize) {}
 
 // Name methods
 std::string Bucket::getName()  {

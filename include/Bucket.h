@@ -7,22 +7,22 @@ class Bucket {
 private:
     std::string name;
     double size;
-    double value;
+    double value{};
 
 public:
 
     // Constructor
-    Bucket(std::string name, double size);
+    Bucket(std::string& bucketName, double bucketSize);
 
-    // Name methods
+    // Name functions
     std::string getName();
     void setName(std::string newName);
 
-    // Size methods
+    // Size functions
     double getSize() const;
     void setSize(double newSize);
 
-    // Value methods
+    // Value functions
     double getValue() const;
     void setValue(double newValue);
     void changeValue(double newValue);
