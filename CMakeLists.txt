@@ -5,18 +5,20 @@ set(CMAKE_CXX_STANDARD 23)
 
 # Specify the source files and headers
 set(Sources
-        src/main.cpp
         src/Bucket.cpp
         src/User.cpp
+        src/main.cpp  # Main should come last in the list
 )
 
-set(Headers
-        include/Bucket.h
-        include/User.h
-)
+#set(Headers
+#        include/Bucket.h
+#        include/User.h
+#)
 
 # Create an executable target
-add_executable(Budget_Buckets ${Sources} ${Headers})
+#add_executable(Budget_Buckets ${Sources} ${Headers})
+add_executable(Budget_Buckets ${Sources})
+
 
 # Set the include directories for the project
 target_include_directories(Budget_Buckets PRIVATE include)
