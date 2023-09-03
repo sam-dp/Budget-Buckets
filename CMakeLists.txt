@@ -10,14 +10,14 @@ set(Sources
         src/main.cpp  # Main should come last in the list
 )
 
-#set(Headers
-#        include/Bucket.h
-#        include/User.h
-#)
+set(Headers
+        include/Bucket.h
+        include/User.h
+)
 
 # Create an executable target
-#add_executable(Budget_Buckets ${Sources} ${Headers})
-add_executable(Budget_Buckets ${Sources})
+add_executable(Budget_Buckets ${Sources} ${Headers})
+#add_executable(Budget_Buckets ${Sources})
 
 
 # Set the include directories for the project
