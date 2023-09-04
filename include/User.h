@@ -4,6 +4,7 @@
 #include "../include/Bucket.h"
 #include <map>
 #include <string>
+#include <vector>
 
 
 class User {
@@ -22,10 +23,11 @@ public:
     void setUsername(std::string& newUsername);
 
     // Bucket vector functions
-    void addBucket(const Bucket& bucket);
+    void addBucket(const std::string& bucketName, double bucketSize);
     void removeBucket(const std::string& bucketName);
     void changeBucketValue(const std::string& bucketName, double sumNum);
     Bucket& getBucket(const std::string& bucketName);
+    std::vector<Bucket> getAllBuckets();
 
 
 

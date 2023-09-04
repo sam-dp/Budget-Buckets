@@ -3,7 +3,9 @@
 
 // Constructor
 Bucket::Bucket(const std::string& bucketName, double bucketSize)
-    : name(bucketName), size(bucketSize) {}
+    : name(bucketName), size(bucketSize) {
+    value = bucketSize;
+}
 
 // Name methods
 const std::string& Bucket::getName() const {

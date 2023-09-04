@@ -1,6 +1,7 @@
 #include "../include/User.h"
-//#include "../include/Bucket.h"
-//#include <map>
+#include "../include/Bucket.h"
+#include <vector>
+#include <map>
 #include <string>
 #include <stdexcept>
 
@@ -18,8 +19,8 @@ void User::setUsername(std::string& newUsername) {
 }
 
 // Bucket functions
-void User::addBucket(const Bucket& bucket) {
-    userBuckets.insert({bucket.getName(), bucket});
+void User::addBucket(const std::string& bucketName, double bucketSize) {
+    userBuckets.insert({bucketName, Bucket(bucketName, bucketSize)});
 }
 
 void User::removeBucket(const std::string& bucketName) {
@@ -40,6 +41,15 @@ void User::removeBucket(const std::string& bucketName) {
         // For now, let's assume you throw an exception.
         throw std::runtime_error("Bucket not found.");
     }
+}
+
+std::vector<Bucket> User::getAllBuckets() {
+    std::vector<Bucket> buckets;
+    for(auto & userBucket : userBuckets) {
+        buckets.push_back(userBucket.second);
+    }
+
+    return buckets;
 }
 
 void User::changeBucketValue(const std::string& bucketName, double sumNum) {
