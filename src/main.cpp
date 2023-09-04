@@ -10,4 +10,5 @@ int main() {
 
     std::cout << "-- User and Bucket Information --\nUsername: " << myUser.getUsername()
               <<  "\nMonthly Income: " << myUser.getMonthlyIncome() << std::endl;
+    
 }

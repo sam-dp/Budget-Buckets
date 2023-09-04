@@ -17,8 +17,6 @@ set(Headers
 
 # Create an executable target
 add_executable(Budget_Buckets ${Sources} ${Headers})
-#add_executable(Budget_Buckets ${Sources})
-
 
 # Set the include directories for the project
 target_include_directories(Budget_Buckets PRIVATE include)
