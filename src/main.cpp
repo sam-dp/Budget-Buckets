@@ -50,23 +50,25 @@ void choiceDialogue(const User& user) {
               << "[1] View Bucket Information" <<  "\n"
               << "[2] Add a Bucket" <<  "\n"
               << "[3] Edit a Bucket" <<  "\n"
-              << "[4] Make a Payment on a bucket" <<  "\n\n"
-              << "Enter one of the following:";
+              << "[4] Make a Payment on a bucket" <<  "\n\n" << std::endl;
 
-    short choice = -1;
+    int choice = -1;
     int choices[] = {1, 2, 3, 4};
-    std::cin >> choice;
-    if(contains(choices, sizeof(choices), choice)) {
-        switch(choice) {
-            case 1:
-                printInfo(user);
-            case 2:
 
-            case 3:
-            case 4:
-            default:
-        }
+    //"Enter one of the above:";
+    std::cin >> choice;
+
+    if(contains(choices, sizeof(choices), choice)) {
+    switch(choice) {
+        case 1:
+            printInfo(user);
+        case 2:
+
+        case 3:
+        case 4:
+        default:
     }
+
     
 }
 
